@@ -49,7 +49,8 @@ const handleFilter = (event: Event) => {
     } else {
       return (
         pokemon.name.toLowerCase().includes(userInput) ||
-        pokemon.types[0].toLowerCase().includes(userInput)
+        pokemon.types[0].toLowerCase().includes(userInput) ||
+        pokemon.id.toString().includes(userInput)
       );
     }
   });
